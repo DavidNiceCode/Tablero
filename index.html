@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ancho = parseInt(prompt("Intruduce el ancho deseado"));
+        let alto = parseInt(prompt("Introduce el alto deseado"));
+        let linea = 0;
+        let resultado = "";
+        for (let i = 1; i <= alto; i = i + 1) {
+            for (let i = 1; i <= ancho; i = i + 1) {
+                if((i+linea)%2 == 0){
+                    resultado = resultado + "X";
+                }else{
+                    resultado = resultado + "O";
+                }    
+            }
+            console.log(resultado);
+            resultado = "";
+            linea = linea + 1;
+        }
+    </script>
+</body>
+</html>
